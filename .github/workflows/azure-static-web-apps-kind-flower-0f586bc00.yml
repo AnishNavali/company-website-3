@@ -34,6 +34,8 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/" # App source code path
           api_location: "" # Api source code path - optional
+          app_build_command: "npm run build"
+          api_build_command: "rm -rf ./node_modules/@next/swc-* && rm -rf ./.next/cache"
           output_location: ".next" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
 
@@ -46,6 +48,8 @@ jobs:
           action: "upload"
           app_location: "/"
           api_location: ""
+          app_build_command: "npm run build"
+          api_build_command: "rm -rf ./node_modules/@next/swc-* && rm -rf ./.next/cache"
           output_location: ".next"
 
   close_pull_request_job:
@@ -59,3 +63,4 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_KIND_FLOWER_0F586BC00 }}
           action: "close"
+
