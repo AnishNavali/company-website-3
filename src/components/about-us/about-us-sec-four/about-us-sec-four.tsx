@@ -130,7 +130,7 @@ export function AboutSectionFour() {
                   </h3>
                   <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                     We developed a comprehensive web application for
-                    Karnataka's state-wide socio-economic survey,
+                    Karnataka&apos;s state-wide socio-economic survey,
                     creating an integrated ecosystem of digital tools that
                     revolutionized data collection and enumerator training
                     processes.

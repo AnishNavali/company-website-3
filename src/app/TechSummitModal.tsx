@@ -266,7 +266,7 @@ export default function TechSummitModal({ isOpen, onClose, onNavigate }: TechSum
                 </p>
                 <p style={{ fontSize: '13px', color: 'white', fontWeight: '500', lineHeight: '1.4' }}>
                   MM Activ Sci-Tech Communications
-No.11/6, NITON, Block "C"
+No.11/6, NITON, Block C
 Second Floor, Palace Road
 Bengaluru - 560001, Karnataka, India
                 </p>
