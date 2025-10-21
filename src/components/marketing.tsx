@@ -206,10 +206,10 @@ export function Marketing() {
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: 0.8 }}
                     >
-                      1.5+
+                      150K+
                     </motion.div>
                     <div className="text-lg font-medium text-blue-700 mb-2">
-                      Lakh Users
+                       Users
                     </div>
                     <div className="text-base font-semibold text-slate-800 mb-2">
                       Successfully Served

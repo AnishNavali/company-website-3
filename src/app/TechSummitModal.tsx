@@ -265,7 +265,10 @@ export default function TechSummitModal({ isOpen, onClose, onNavigate }: TechSum
                   Location
                 </p>
                 <p style={{ fontSize: '13px', color: 'white', fontWeight: '500', lineHeight: '1.4' }}>
-                  BIEC, Tumkur Road, Bengaluru
+                  MM Activ Sci-Tech Communications
+No.11/6, NITON, Block "C"
+Second Floor, Palace Road
+Bengaluru - 560001, Karnataka, India
                 </p>
               </div>
             </div>
@@ -288,7 +291,7 @@ export default function TechSummitModal({ isOpen, onClose, onNavigate }: TechSum
                   Event Dates
                 </p>
                 <p style={{ fontSize: '13px', color: 'white', fontWeight: '500' }}>
-                  November 19-21, 2025
+                  November 18-20, 2025
                 </p>
               </div>
             </div>
@@ -303,7 +306,7 @@ export default function TechSummitModal({ isOpen, onClose, onNavigate }: TechSum
             }}
           >
             <a
-              href="https://bengalurutechsummit.karnataka.gov.in/"
+              href="https://bengalurutechsummit.com/"
               target="_blank"
               rel="noopener noreferrer"
               style={{
