@@ -64,7 +64,7 @@ export async function POST(request: Request) {
     // Email to HR
     const hrEmail = {
       from: `"HR Recruitment Portal" <${process.env.GMAIL_USER}>`,
-      to: process.env.HR_EMAIL || process.env.GMAIL_USER,
+      to: "anish.equilibrate@gmail.com",
       subject: `New Application Received - ${position} (${firstName} ${lastName})`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -107,7 +107,7 @@ export async function POST(request: Request) {
     // Email to applicant (matching the image style)
     const userEmail = {
       from: `"HR Recruitment Team" <${process.env.GMAIL_USER}>`,
-      to: email,
+      to: "anish.equilibrate@gmail.com",
       subject: `Application Submitted Successfully for ${position}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; color: #333;">
