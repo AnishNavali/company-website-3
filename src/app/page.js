@@ -313,7 +313,7 @@ export default function MarioGamePage() {
 
   const handleRestart = () => {
     console.log("🔄 Restarting game - Canceling animation frame...");
-    
+    setMobileInput("right", false)
     // Cancel any running animation frame
     if (window.gameInstance?._raf) {
       cancelAnimationFrame(window.gameInstance._raf);
