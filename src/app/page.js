@@ -313,6 +313,9 @@ export default function MarioGamePage() {
 
   const handleRestart = () => {
     console.log("🔄 Restarting game - Canceling animation frame...");
+    setMobileInput("right", false)
+    setMobileInput("jump",false)
+    setMobileInput("left",false)
     
     // Cancel any running animation frame
     if (window.gameInstance?._raf) {
@@ -351,7 +354,7 @@ export default function MarioGamePage() {
         mario.velX = 0;
         mario.velY = 0;
         mario.pointer = "idle";
-        mario.currentDirection = "right";
+        // mario.currentDirection = "right";
         if (mario.states && mario.states.standingAnim) {
           mario.currentState = mario.states.standingAnim;
         }
