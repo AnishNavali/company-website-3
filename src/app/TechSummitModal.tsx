@@ -317,9 +317,8 @@ export default function TechSummitModal({
                 <div style={{ flex: 1 }}>
                   <p className="tech-summit-detail-label">Location</p>
                   <p className="tech-summit-detail-value">
-                    MM Activ Sci-Tech Communications No.11/6, NITON, Block
-                    &quot;C Second Floor, Palace Road Bengaluru - 560001,
-                    Karnataka, India
+                    Bangalore International Exhibition Centre (BIEC)
+                    10th Mile, Tumkur Road, Madavara Post, Bangalore - 562 123
                   </p>
                 </div>
               </div>
