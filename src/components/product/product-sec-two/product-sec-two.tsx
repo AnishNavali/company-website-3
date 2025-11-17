@@ -129,9 +129,9 @@ const productSuites: ProductSuite[] = [
       { label: "Device Native", value: "✓" },
     ],
     carouselImages: [
-      { url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop", alt: "Analytics Dashboard" },
-      { url: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop", alt: "Data Visualization" },
-      { url: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=600&fit=crop", alt: "Predictive Models" },
+      { url: "/Adro/Adro-pic-1.png", alt: "Analytics Dashboard" },
+      { url: "/Adro/Adro-pic-3.png", alt: "Data Visualization" },
+      { url: "/Adro/Adro-pic-2.png", alt: "Predictive Models" },
     ],
     whyChoose: [
       { icon: <Zap className="w-4 h-4 text-indigo-500 flex-shrink-0" />, text: "Easy Integration" },
@@ -160,9 +160,9 @@ const productSuites: ProductSuite[] = [
       { label: "Setup Time", value: "5 Min" },
     ],
     carouselImages: [
-      { url: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&h=600&fit=crop", alt: "AI Chatbot Interface" },
-      { url: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop", alt: "Bot Integration" },
-      { url: "https://images.unsplash.com/photo-1526378800651-c32d170fe6f8?w=800&h=600&fit=crop", alt: "Custom Templates" },
+      { url: "/ChatBot/Chatbot pic-1.jpeg", alt: "AI Chatbot Interface" },
+      { url: "/ChatBot/Chatbot pic-2.jpeg", alt: "Bot Integration" },
+      { url: "/ChatBot/Chatbot pic-3.jpeg", alt: "Custom Templates" },
     ],
     whyChoose: [
       { icon: <Bot className="w-4 h-4 text-indigo-500 flex-shrink-0" />, text: "No-Code Setup" },
@@ -318,8 +318,8 @@ FeatureList.displayName = "FeatureList";
 
 export function ProductSecTwo() {
   const [selectedSuite, setSelectedSuite] = useState<ProductSuite | null>(null);
-const detailRef = useRef<HTMLDivElement | null>(null);
-const heroRef = useRef<HTMLDivElement | null>(null);
+  const detailRef = useRef<HTMLDivElement | null>(null);
+  const heroRef = useRef<HTMLDivElement | null>(null);
 
   const isDetailInView = useInView(detailRef, { once: false, amount: 0.2 });
   const isHeroInView = useInView(heroRef, { once: false, amount: 0.3 });
@@ -347,12 +347,11 @@ const heroRef = useRef<HTMLDivElement | null>(null);
   };
 
   const handleCardClick = (suite: ProductSuite) => {
-  setSelectedSuite(suite);
-  setTimeout(() => {
-    detailRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
-  }, 50);
-};
-
+    setSelectedSuite(suite);
+    setTimeout(() => {
+      detailRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }, 50);
+  };
 
   const handleOutsideClick = (e: React.MouseEvent) => {
     if (e.target === e.currentTarget) {
@@ -570,23 +569,6 @@ const heroRef = useRef<HTMLDivElement | null>(null);
                         </div>
                       </div>
                     </div>
-
-                    {/* <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                      <Button
-                        size="lg"
-                        className="bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 text-white w-full sm:w-auto"
-                      >
-                        View Suite
-                        <ArrowRight className="w-4 h-4 ml-2" />
-                      </Button>
-                      <Button
-                        variant="outline"
-                        size="lg"
-                        className="border-indigo-500 text-indigo-600 bg-indigo-50 w-full sm:w-auto"
-                      >
-                        Learn More
-                      </Button>
-                    </div> */}
                   </div>
 
                   {/* Right Content - Carousel Card */}
@@ -598,8 +580,8 @@ const heroRef = useRef<HTMLDivElement | null>(null);
                             <CarouselItem key={index}>
                               <div className="relative aspect-video w-full overflow-hidden rounded-lg bg-gray-100">
                                 <Image
-                                  width={100}
-                                  height={100}
+                                  width={800}
+                                  height={600}
                                   src={image.url}
                                   alt={image.alt}
                                   className="w-full h-full object-cover"
