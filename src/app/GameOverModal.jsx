@@ -5,6 +5,8 @@ import React from "react";
 
 export default function GameOverModal({ finalScore, finalCoins, onRestart, onNavigateHome, isMobile }) {
   const handleTryAgain = () => {
+    // e.preventDefault();
+    // e.stopPropagation();    
     onRestart();
   };
 
